@@ -3,9 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pregunta2</title>
+    <title>Preguntas de Literatura</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
   </head>
   <body>
-    <p>Momento pregunta</p>
+    <div class="container mt-5">
+      <h1>Preguntas de Literatura</h1>
+      <p>Hace clic en el botón para mostrar 10 preguntas aleatorias:</p>
+      <button class="btn btn-primary" id="generateQuestionsBtn">
+        Mostrar Preguntas
+      </button>
+      <div class="mt-3" id="questionsContainer">
+        <!-- Aquí se mostrarán las preguntas -->
+      </div>
+      <div class="mt-3" id="submitContainer">
+        <button class="btn btn-success" id="submitAnswersBtn" disabled>
+          Enviar Respuestas
+        </button>
+        <p class="mt-2" id="resultMessage"></p>
+      </div>
+    </div>
+
+    <script src="JS/main.js"></script>
   </body>
 </html>
