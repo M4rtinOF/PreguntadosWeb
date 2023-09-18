@@ -1,32 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Preguntas de Literatura</title>
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
-  </head>
-  <body>
-    <div class="container mt-5">
-      <h1>Preguntas de Literatura</h1>
-      <p>Hace clic en el botón para mostrar 10 preguntas aleatorias:</p>
-      <button class="btn btn-primary" id="generateQuestionsBtn">
-        Mostrar Preguntas
-      </button>
-      <div class="mt-3" id="questionsContainer">
-        <!-- Aquí se mostrarán las preguntas -->
-      </div>
-      <div class="mt-3" id="submitContainer">
-        <button class="btn btn-success" id="submitAnswersBtn" disabled>
-          Enviar Respuestas
-        </button>
-        <p class="mt-2" id="resultMessage"></p>
-      </div>
-    </div>
+<html>
+<head>
+  <title>Quiz App</title>
+  
+  <link rel="stylesheet" type="text/css" href="Bootstrap/css/bootstrap.min.cssq">
+  <link rel="stylesheet" type="text/css" href="CSS/estilos.css">
+</head>
 
-    <script src="JS/main.js"></script>
-  </body>
+<body>
+
+  <div class="question">
+    
+    <h2>Pregunta 1</h2>
+    <img src="question-image.png" alt="Question Image">
+  </div>
+
+  <div class="answers">
+    <button class="answer">Respuesta 1</button>
+    <button class="answer">Respuesta 2</button> 
+    <button class="answer">Respuesta 3</button>
+    <button class="answer correct">Respuesta 4</button>
+  </div>
+
+  <script src="Bootstrap/js/bootstrap.min.js"></script>
+  <script src="JS/formulario.js"></script>
+
+</body>
 </html>
