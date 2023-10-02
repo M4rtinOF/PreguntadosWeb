@@ -9,3 +9,11 @@ answers.forEach(answer => {
     }
   }); 
 });
+
+// fetch()
+fetch('https://pokeapi.co/api/v2/pokemon')
+  .then(response => response.json())    // a fetch le llega una respuesta en string que tiene que ser parseada a JSON
+  .then(data => {
+    console.log(data) 
+  })
+  .catch(error => console.error(error));
